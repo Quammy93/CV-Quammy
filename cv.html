@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 60px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-top: 2px solid #3498db;
+            border-bottom: 2px solid #3498db;
+            padding: 20px 0;
+        }
+
+        .name {
+            color: #3498db;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .summary {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #3498db;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            margin: 40px 0 30px;
+            position: relative;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 35%;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .section-title::before {
+            left: 0;
+        }
+
+        .section-title::after {
+            right: 0;
+        }
+
+        .job {
+            margin-bottom: 30px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .job-date {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .company {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .job ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .degree {
+            font-weight: 600;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .institution {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            margin-top: 2px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        .certifications {
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .certifications li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .accomplishments {
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .accomplishments li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .affiliations {
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .affiliations li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                padding: 20px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">MAXWELL AHORLU</h1>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:Quammy93@gmail.com">Quammy93@gmail.com</a> | Phone: +233 0244534628</p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/maxwell-ahorlu">linkedin.com/in/maxwell-ahorlu</a> | GitHub: <a href="https://github.com/Quammy93">github.com/Quammy93</a></p>
+                <p>Location: Accra, Ghana | Portfolio: <a href="https://quammy93.github.io/Maxwell_Ahorlu">quammy93.github.io/Maxwell_Ahorlu</a></p>
+            </div>
+        </header>
+
+        <h2 class="section-title">Professional Summary</h2>
+        
+        <p class="summary">
+            Seasoned Cloud Architect and Software Developer with 10+ years of teaching experience and expertise in multiple programming languages and frameworks. Skilled in designing, implementing, and managing secure cloud infrastructure with strong understanding of cloud architecture principles, DevOps methodologies, and containerization technologies. Dedicated to code quality, project efficiency, and driving business growth through technological advancement.
+        </p>
+
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="job-title">Cloud Architect</h3>
+                <span class="job-date">Aug 2025 - Current</span>
+            </div>
+            <div class="company">AWS Training With AmaliTech</div>
+            <ul>
+                <li>Designed cloud architecture solutions for various customer needs</li>
+                <li>Implemented best practices for cloud security and compliance standards</li>
+                <li>Analyzed existing systems to recommend cloud migration strategies</li>
+                <li>Reviewed architectural designs to ensure scalability and performance efficiency</li>
+                <li>Managed documentation of cloud infrastructure and deployment processes</li>
+                <li>Collaborated with developers and stakeholders to ensure successful deployment of applications on cloud platform</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="job-title">Developer Intern</h3>
+                <span class="job-date">Aug 2023 - Jul 2025</span>
+            </div>
+            <div class="company">Ngoane Health Tech Company</div>
+            <ul>
+                <li>Collaborated with cross-functional teams to ensure seamless integration of new features</li>
+                <li>Debugged complex software issues, leading to more stable product releases</li>
+                <li>Conducted thorough code reviews to ensure adherence to coding standards and best practices</li>
+                <li>Built databases and table structures for web applications</li>
+                <li>Worked closely with clients to gather requirements and translate them into technical specifications</li>
+                <li>Adapted quickly to new technologies and programming languages, enhancing overall team productivity</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <h3 class="job-title">Teacher</h3>
+                <span class="job-date">Sep 2013 - Aug 2022</span>
+            </div>
+            <div class="company">Ghana Education Service (GES)</div>
+            <ul>
+                <li>Administered assessments to determine each student's specific educational and social needs</li>
+                <li>Planned and organized classrooms that consistently facilitated positive learning experiences</li>
+                <li>Adapted teaching methods and materials to meet students' varying needs and interests</li>
+                <li>Worked collaboratively with other teachers to review data and develop instructional strategies</li>
+                <li>Established productive rapport with parents, encouraging parental involvement to boost student achievement</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <div class="degree">Software Engineering</div>
+                    <div class="institution">ALX AFRICA, Ghana (Mastercard Foundation)</div>
+                </div>
+                <span class="job-date">Nov 2023</span>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <div class="degree">Bachelor of Education, Accounting</div>
+                    <div class="institution">Valley View University, Ghana</div>
+                </div>
+                <span class="job-date">Jul 2017</span>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-header">
+                <div>
+                    <div class="degree">Diploma in Basic Education, Early Childhood</div>
+                    <div class="institution">Jasikan College of Education, Ghana</div>
+                </div>
+                <span class="job-date">Jul 2013</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Cloud Architecture</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">DevOps</span>
+            <span class="skill-tag">Containerization</span>
+            <span class="skill-tag">Database Programming</span>
+            <span class="skill-tag">Cloud Security</span>
+            <span class="skill-tag">Migration Strategies</span>
+            <span class="skill-tag">Serverless Computing</span>
+        </div>
+
+        <h2 class="section-title">Certifications</h2>
+
+        <ul class="certifications">
+            <li>Certified Software Development Professional</li>
+            <li>Certified Cloud Architecture</li>
+            <li>Certified Internet Web Professional</li>
+        </ul>
+
+        <h2 class="section-title">AI Projects</h2>
+
+        <div class="project">
+            <h3 class="project-title">AI Sentiment Dashboard</h3>
+            <p class="project-description">
+                Developed an AI-powered sentiment analysis dashboard with interactive chart visualizations that predicts and classifies text as POSITIVE, NEUTRAL, or NEGATIVE using machine learning algorithms and natural language processing techniques.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">Multi-Agent AI Systems</h3>
+            <p class="project-description">
+                Built collaborative multi-agent systems as part of Ready Tensor Agentic AI Developer Certification Program, implementing advanced agent coordination, communication protocols, and distributed problem-solving capabilities using Python.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">Web APIs for AI Agents</h3>
+            <p class="project-description">
+                Designed and implemented RESTful APIs to enable AI agents to interact with external services and data sources, featuring authentication, rate limiting, and real-time data processing capabilities for seamless agent integration.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">RAG-Based Research Assistant API</h3>
+            <p class="project-description">
+                Developed a Retrieval-Augmented Generation (RAG) API that combines vector databases with large language models to provide accurate, context-aware research assistance with document retrieval and intelligent query processing.
+            </p>
+        </div>
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-description">
+                Developed a full-stack e-commerce application using React and Node.js with integrated payment processing, user authentication, and real-time inventory management.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">Cloud Migration Solution</h3>
+            <p class="project-description">
+                Led the migration of on-premises infrastructure to AWS, implementing auto-scaling, load balancing, and disaster recovery strategies that reduced operational costs by 40%.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 class="project-title">Healthcare Management System</h3>
+            <p class="project-description">
+                Built a comprehensive patient management system using Django and PostgreSQL, featuring appointment scheduling, medical records management, and secure data encryption.
+            </p>
+        </div>
+
+        <h2 class="section-title">Projects & Accomplishments</h2>
+
+        <ul class="accomplishments">
+            <li>Documented and resolved plans, contributing to Rxkonet.com</li>
+            <li>Collaborated with team of 5 in development of Rxkonet.com</li>
+            <li>Collaborated with team of 4 in development of REVEEW website for product reviewing</li>
+            <li>Initiated a training program for over 150+ students in basic coding</li>
+        </ul>
+
+        <h2 class="section-title">Professional Affiliations</h2>
+
+        <ul class="affiliations">
+            <li>Ghana National Association of Teachers (GNAT)</li>
+            <li>Regulated by National Teaching Council (NTC)</li>
+            <li>Young African Leaders Initiative (YALI)</li>
+            <li>ALX Room Fellowship</li>
+        </ul>
+
+    </div>
+</body>
+</html>
